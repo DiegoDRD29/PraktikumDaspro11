@@ -27,7 +27,7 @@ public class studikasus1_11 {
         double totalBayar = totalBelanja - diskon;
 
         // Output
-        System.out.println("\n=== Kedai Kopi Senja ===");
+       
         System.out.println("Harga per cup  : Rp" + hargaPerCup);
         System.out.println("Jumlah cup     : " + jumlahCup);
         System.out.println("Total belanja  : Rp" + totalBelanja);
