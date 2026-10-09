@@ -15,6 +15,9 @@ public class studikasus1_11 {
         System.out.print("Masukkan jumlah cup: ");
         int jumlahCup = Diego.nextInt();
 
+        //input uang bayar
+        System.out.println("masukkan jumlah uang yang dibayar: ");
+
         // Hitung total belanja
         int totalBelanja = jumlahCup * hargaPerCup;
         double diskon = 0;
@@ -33,7 +36,6 @@ public class studikasus1_11 {
         System.out.println("Total belanja  : Rp" + totalBelanja);
         System.out.println("Diskon (" + persenDiskon + "%)  : Rp" + (int) diskon);
         System.out.println("Total bayar    : Rp" + (int) totalBayar);
-
         Diego.close();
     }
 }
