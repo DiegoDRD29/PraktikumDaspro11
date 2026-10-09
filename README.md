@@ -2,7 +2,7 @@
 Ini adalah repository pertama saya
 Nama:Diego Rivas Dakunna
 NIM:264107020103
-Kelas:TI-1E
+kelas:TI-IE
 
 P=11
 Harga percup  15000 + (P mod 6) × 1000=20000
