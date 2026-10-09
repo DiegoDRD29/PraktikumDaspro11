@@ -9,7 +9,7 @@ public class studikasus1_11 {
  // Nilai yang disesuaikan dengan P
         int hargaPerCup = 15000 + (P % 6) * 1000;       // Rp20.000
         int minimalBelanja = 80000 + (P % 5) * 10000;   // Rp90.000
-        int persenDiskon = 5 + (P % 6);                 
+        int persenDiskon = 5 + (P % 6);                 //10%
 
         // Input jumlah cup
         System.out.print("Masukkan jumlah cup: ");
