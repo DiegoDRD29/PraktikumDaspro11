@@ -22,7 +22,7 @@ public class studikasus2_11 {
         } else if (jenis.equals("BELMAWA") || jenis.equals("BAKORMA") || jenis.equals("MANDIRI")) {
             System.out.print("Jumlah dokumen yang diupload (0-4) : ");
             int dokumen = Diego.nextInt();
-            System.out.print("Peringkat juara (1/2/3, isi 0 jika bukan juara) : ");
+            System.out.print("Masukkan peringkat juara (1/2/3, isi 0 jika bukan juara) : ");
             int juara = Diego.nextInt();
 
             // Tingkat 2: cek status juara
@@ -39,7 +39,26 @@ public class studikasus2_11 {
                 status = "TIDAK DIBERIKAN";
                 alasan = "Bukan peraih Juara 1, 2, atau 3 (Juara Harapan/peserta tidak mendapat dana).";
             }
-        
+        } else if (jenis.equals("PKM")) {
+            System.out.print("Jumlah dokumen yang diupload (0-4) : ");
+            int dokumen = Diego.nextInt();
+            System.out.print("Status pendanaan PKM (1 = lolos, 0 = tidak lolos) : ");
+            int pkm = Diego.nextInt();
+
+            // Tingkat 2: cek lolos pendanaan
+            if (pkm == 1) {
+                // Tingkat 3: cek kelengkapan dokumen
+                if (dokumen == 4) {
+                    status = "DIBERIKAN";
+                    alasan = "Tim PKM lolos pendanaan dan keempat dokumen lengkap.";
+                } else {
+                    status = "TIDAK DIBERIKAN";
+                    alasan = "Dokumen tidak lengkap, masih kurang " + (4 - dokumen) + " dokumen.";
+                }
+            } else {
+                status = "TIDAK DIBERIKAN";
+                alasan = "Tim PKM tidak lolos pendanaan.";
+            }
         } else {
             status = "TIDAK VALID";
             alasan = "Jenis kegiatan tidak dikenali.";
